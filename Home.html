@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FORTNITE INFORMATION SITE</title>
+   <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <!--! header section start -->
+   
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo" />
+        </a>
+        <nav class="navbar">
+          
+            <a href="Chapter1.html">Chapter 1</a>
+            <a href="Chapter2.html">Chapter 2</a>
+            <a href="Chapter3.html">Chapter 3</a>
+            <a href="Chapter4.html">Chapter 4</a>
+            <a href="Chapter5.html">Chapter 5</a>
+            <a href="Chapter6.html">Chapter 6</a>
+            <a href="#Comment">Suggestion</a>
+            
+        </nav>
+        <div class="buttons">
+            <div class="dropdown">
+                <button id="dil-btn">
+                    <i class="fa-solid fa-language"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" id="english">English</a>
+                    <a href="Hometr.html" id="turkish">Türkçe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--! header section end -->
+
+    <!--! home section start -->
+<section class="Home">
+  <div class="content"> <h3>
+    FORTNITE ALL SEASONS STORIES ITEMS AND META EXPLAINED IN ONE WEB SITE
+    <p>
+        In this site you will learn about all fortnite seasons'[till chapter 6 season 2(newest season)]stories, all guns, all movement items all tournaments main events side storyline,every pro player that won tournaments that chapter and tournament results.
+    </p>
+</h3>
+
+  </div>
+</section>
+ <!--! home section end -->
+<!--! footer section start -->
+<section class="footer">
+    <div class="credit">
+        created by <span>Erkut Erseven</span>   All rights reserved.
+    </div>
+
+    <div class="comment-section" id="Comment">
+        <h3>Leave a Comment for This Web-site.</h3>
+        <div class="comment-header">
+            <input type="text" id="nameInput" placeholder="Your name...">
+            <div class="stars" id="userStars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+        <button class="btn btn-primary" onclick="addComment()">Submit</button>
+        <div id="commentList" class="comment-container"></div> 
+    </div>
+
+    <div class="rating-section">
+        <h3>Overall Site Rating</h3>
+        <p>Average Rating: <span id="averageRating">0</span>/5</p>
+    </div>
+</section>
+ <!--! footer section end -->
+ <script src="js/script.js"></script>
+</body>
+</html>
