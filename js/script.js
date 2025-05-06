@@ -161,3 +161,14 @@ document.querySelectorAll("#userStars .star").forEach(star => {
       }
   });
 });
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const openId = params.get('open');
+  if (openId) {
+    const section = document.getElementById(openId);
+    if (section) {
+      section.style.display = 'block';
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
