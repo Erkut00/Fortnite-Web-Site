@@ -172,3 +172,14 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+window.onload = function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const sectionToShow = urlParams.get("open");
+  if (sectionToShow) {
+    const section = document.getElementById(sectionToShow);
+    if (section) {
+      section.style.display = "block";
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+};
